@@ -12,25 +12,21 @@ struct ContentView: View {
     var nombre = "Pau"
     var body: some View {
         VStack {
-            VStack {
-                VStack {
-                    Text("Hello \(nombre)")
-                        .italic()
-                        .foregroundColor(.green)
-                        .padding()
-                    
-                    Button(action: {
-                        nombre = "Quesadilla"
-                    }) {
-                        Text("Pulsame")
-                            .foregroundColor(.blue)
-                            .background(Color .black
-                            )
-                    }
-                    
-                    Image("Supra-MK5").resizable().aspectRatio(contentMode: .fit)
-                }
+            Text("Hello \(nombre)")
+                .italic()
+                .foregroundColor(.green)
+                .padding()
+            
+            Button(action: {
+                nombre = "Quesadilla"
+            }) {
+                Text(" Boton ")
+                    .foregroundColor(.blue)
+                    .background(Color .black
+                    )
             }
+            
+            Image("foto1").resizable().aspectRatio(contentMode: .fit)
         }
     }
 }
